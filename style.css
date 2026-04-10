@@ -1,12 +1,13 @@
 * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   body {
-    font-family: Lato;
+    font-family: "Lato", sans-serif;
   }
   h1 {
     font-weight: bold;
   }
-  margin: 0;
-  padding: 0;
 }
 
 main {
@@ -37,7 +38,9 @@ main {
 .card input {
   padding: 10px;
   width: 100%;
-  border: none;
+  background-color: transparent;
+  border: solid 1px #5d5d5d;
+  border-radius: 20px;
 }
 .question-login {
   display: flex;
@@ -46,19 +49,27 @@ main {
   gap: 50px;
 }
 
-.button-login {
+.button-login,
+.button-google {
   color: white;
-  padding: 10px 20px;
+  padding: 10px;
   width: 100%;
   cursor: pointer;
   text-align: center;
+  background-color: transparent;
+  border: solid 1px #5d5d5d;
+  border-radius: 20px;
 }
 .card p {
   justify-self: center;
   margin: 10px 0px;
 }
+.card a {
+  text-decoration: none;
+  color: #d0d5ea;
+  text-decoration: underline;
+}
+
 .button-login {
-  background-color: transparent;
-  border-radius: 30px;
-  border: none;
+  background-color: #5d5d5d;
 }
