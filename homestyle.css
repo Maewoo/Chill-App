@@ -1,0 +1,35 @@
+:root {
+  --text-light-primary: #ffffff;
+  --text-light-secondary: #c1c2c4;
+  --text-light-disabled: #5d5d5d;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0 solid;
+}
+body {
+  font-family: "Lato", sans-serif;
+  background-color: #2f3334;
+}
+.navbar,
+.navbar a {
+  color: white;
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.nav-links {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  color: var(--text-light-primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}

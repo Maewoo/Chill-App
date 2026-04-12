@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Chill | Login Page</title>
+    <title>Chill | Register Page</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -18,23 +18,44 @@
         <logo class="chill-logo">
           <img src="asset/Logo.png" alt="Chill Logo" />
         </logo>
-        <h1>Masuk</h1>
-        <p>Selamat datang kembali!</p>
+        <h1>Daftar</h1>
+        <p>Selamat datang di Chill!</p>
         <form action="/login" method="post">
           <label for="username">Username:</label>
-          <input type="text" id="username" name="username" required />
+          <input
+            type="text"
+            id="username"
+            name="username"
+            placeholder="Masukkan username"
+            required
+          />
           <label for="password">Password:</label>
-          <input type="password" id="password" name="password" required />
+
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Masukkan password"
+            required
+          />
+          <label for="confirm-password">Konfirmasi Password:</label>
+          <br />
+          <input
+            type="password"
+            id="confirm-password"
+            name="confirm-password"
+            placeholder="Konfirmasi password"
+            required
+          />
           <section class="question-login">
             <p>
-              Belum punya akun? <a href="register-page.html">Daftar di sini</a>.
+              Sudah punya akun? <a href="login-page.html">Masuk di sini</a>.
             </p>
-            <p><a href="/forgot-password">Lupa password?</a></p>
           </section>
 
-          <button class="button-login" type="submit">Login</button>
+          <button class="button-login" type="submit">Daftar</button>
           <p>Atau</p>
-          <button class="button-google">Masuk dengan Google</button>
+          <button class="button-google">Daftar dengan Google</button>
         </form>
       </section>
     </main>
