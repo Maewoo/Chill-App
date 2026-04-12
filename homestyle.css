@@ -2,6 +2,7 @@
   --text-light-primary: #ffffff;
   --text-light-secondary: #c1c2c4;
   --text-light-disabled: #5d5d5d;
+  --btn-primary-300: #0f1e93;
 }
 * {
   box-sizing: border-box;
@@ -12,6 +13,8 @@
 body {
   font-family: "Lato", sans-serif;
   background-color: #2f3334;
+  display: flex;
+  flex-direction: column;
 }
 .navbar,
 .navbar a {
@@ -21,8 +24,13 @@ body {
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
+  text-decoration: none;
 }
 
+.nav-links-profile {
+  margin-left: auto;
+  list-style-type: none;
+}
 .nav-links {
   list-style-type: none;
   margin: 0;
@@ -32,4 +40,48 @@ body {
   justify-content: center;
   align-items: center;
   gap: 20px;
+  text-decoration: none;
+}
+
+.featured-content {
+  background-color: aquamarine;
+  height: 587px;
+  color: var(--text-light-primary);
+  width: 100%;
+  padding: auto;
+  position: absolute;
+  flex-direction: column;
+}
+.featured-overlay {
+  background-color: #343eb4;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  bottom: 0px;
+  margin: 0px 40px 40px 40px;
+}
+.featured-overlay-text {
+  background-color: #44d46a;
+  width: 60%;
+}
+.btn-container {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  height: 40px;
+  gap: 10px;
+}
+.btn-watch {
+  width: 93px;
+  color: var(--text-light-primary);
+  background-color: var(--btn-primary-300);
+}
+.btn-more {
+  width: 185px;
+  color: var(--text-light-primary);
+}
+.age-info {
+  width: 52px;
+  text-align: center;
 }
