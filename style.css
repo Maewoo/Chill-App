@@ -6,6 +6,11 @@
 
 body {
   font-family: "Lato", sans-serif;
+  background-image: url(asset/Background.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100vw;
+  height: 100vh;
 }
 
 h1 {
