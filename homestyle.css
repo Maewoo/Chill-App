@@ -70,7 +70,7 @@ body {
   color: var(--text-light-primary);
   width: 100%;
   padding: auto;
-  position: absolute;
+  position: relative;
   flex-direction: column;
 
   background-image: url("asset/Featured.png");
@@ -153,4 +153,43 @@ body {
   position: absolute;
   top: 0;
   left: 0;
+}
+
+.resume-section {
+  color: var(--text-light-primary);
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px 0px;
+  font-size: 18px;
+  min-height: 151px;
+}
+.resume-item {
+  width: fit-content;
+  position: relative;
+}
+.resume-list {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+.resume-section img {
+  max-height: 151px;
+}
+.resume-overlay {
+  position: absolute;
+  bottom: 0px;
+  padding: 16px;
+  width: 100%;
+  z-index: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.rating-container {
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
 }
