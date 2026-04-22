@@ -20,14 +20,18 @@
   }
 }
 
+html,
+body {
+  overflow-x: hidden;
+}
+
 body {
   background-color: var(--other-page-header);
   display: flex;
   flex-direction: column;
   font-family: "Lato", sans-serif;
-  width: 100vw;
-  min-height: 100%;
-  height: 100vh;
+  min-height: 100vh;
+  min-width: 100%;
 }
 
 .navbar,
@@ -284,16 +288,18 @@ body {
   flex-direction: column;
   width: 100%;
 }
-.nav-footer a {
+.footer-bar {
   color: var(--text-light-secondary);
   text-decoration: none;
-  padding: 4px 0px;
+  min-height: 24px;
+  height: 24px;
+  padding: 4px 6px 4px 0px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   font-size: 16px;
 }
-.nav-footer img {
-  min-width: 7px;
-  width: 7px;
+.footer-bar a {
+  color: var(--text-light-secondary);
+  text-decoration: none;
 }
