@@ -111,7 +111,6 @@ body {
 }
 
 .btn-container {
-  background-color: #ffffff1f;
   display: flex;
   height: fit-content;
   flex-direction: row;
@@ -373,16 +372,32 @@ body {
     height: 44px;
   }
   .navbar,
-  .navbar a {
+  .navbar a,
+  .nav-links {
     height: fit-content;
     font-size: 18px;
+    gap: 80px;
   }
   .navbar {
-    gap: 80px;
     padding: 1rem 80px;
   }
   .navbar-container {
     height: fit-content;
+  }
+  .profile-nav {
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+  }
+  .profile-pict {
+    width: 40px;
+  }
+  .arrow-down {
+    width: 28px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    bottom: 6px;
   }
   .featured-content {
     height: 587px;
