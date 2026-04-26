@@ -11,20 +11,38 @@
       href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
       rel="stylesheet"
     />
+
+    <link rel="shortcut icon" href="asset/movie-open.png" type="image/x-icon" />
   </head>
   <body>
     <main>
       <section class="card">
-        <logo class="chill-logo">
+        <div class="chill-logo">
           <img src="asset/Logo.png" alt="Chill Logo" />
-        </logo>
+        </div>
         <h1>Masuk</h1>
         <p>Selamat datang kembali!</p>
         <form action="/login" method="post">
-          <label for="username">Username:</label>
-          <input type="text" id="username" name="username" required />
-          <label for="password">Password:</label>
-          <input type="password" id="password" name="password" required />
+          <div class="form-group">
+            <label for="username">Username:</label>
+            <input
+              type="text"
+              id="username"
+              name="username"
+              required
+              placeholder="Masukkan username"
+            />
+          </div>
+          <div class="form-group">
+            <label for="password">Password:</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              required
+              placeholder="Masukkan password"
+            />
+          </div>
           <section class="question-login">
             <p>
               Belum punya akun? <a href="register-page.html">Daftar di sini</a>.
@@ -34,8 +52,11 @@
 
           <button class="button-login" type="submit">Login</button>
           <p>Atau</p>
-          <img src="asset/google.png" alt="Google icon" />
-          <a class="google-login" href="#">Masuk dengan Google</a>
+
+          <div class="google-login">
+            <img src="asset/google.png" alt="Google icon" />
+            <a href="#">Masuk dengan Google</a>
+          </div>
         </form>
       </section>
     </main>

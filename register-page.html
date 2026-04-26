@@ -11,42 +11,48 @@
       href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
       rel="stylesheet"
     />
+
+    <link rel="shortcut icon" href="asset/movie-open.png" type="image/x-icon" />
   </head>
   <body>
     <main>
       <section class="card">
-        <logo class="chill-logo">
+        <div class="chill-logo">
           <img src="asset/Logo.png" alt="Chill Logo" />
-        </logo>
+        </div>
         <h1>Daftar</h1>
         <p>Selamat datang di Chill!</p>
         <form action="/login" method="post">
-          <label for="username">Username:</label>
-          <input
-            type="text"
-            id="username"
-            name="username"
-            placeholder="Masukkan username"
-            required
-          />
-          <label for="password">Password:</label>
-
-          <input
-            type="password"
-            id="password"
-            name="password"
-            placeholder="Masukkan password"
-            required
-          />
-          <label for="confirm-password">Konfirmasi Password:</label>
-          <br />
-          <input
-            type="password"
-            id="confirm-password"
-            name="confirm-password"
-            placeholder="Konfirmasi password"
-            required
-          />
+          <div class="form-group">
+            <label for="username">Username:</label>
+            <input
+              type="text"
+              id="username"
+              name="username"
+              placeholder="Masukkan username"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="password">Password:</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="Masukkan password"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="confirm-password">Konfirmasi Password:</label>
+            <input
+              type="password"
+              id="confirm-password"
+              name="confirm-password"
+              placeholder="Konfirmasi password"
+              required
+            />
+          </div>
           <section class="question-login">
             <p>
               Sudah punya akun? <a href="login-page.html">Masuk di sini</a>.
@@ -55,7 +61,10 @@
 
           <button class="button-login" type="submit">Daftar</button>
           <p>Atau</p>
-          <button class="button-google">Daftar dengan Google</button>
+          <div class="google-login">
+            <img src="asset/google.png" alt="Google icon" />
+            <a href="#">Daftar dengan Google</a>
+          </div>
         </form>
       </section>
     </main>
