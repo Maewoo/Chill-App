@@ -36,13 +36,14 @@ body {
 
 .navbar,
 .navbar a {
-  color: white;
+  color: var(--text-light-primary);
   padding: 1rem;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
   text-decoration: none;
+  gap: 12px;
 }
 
 .profile-nav {
@@ -73,6 +74,7 @@ body {
 .featured-content {
   background-color: aquamarine;
   min-height: 198px;
+  max-height: 587px;
   color: var(--text-light-primary);
   width: 100%;
   padding: auto;
@@ -90,7 +92,7 @@ body {
   flex-direction: column;
   position: absolute;
   bottom: 0px;
-  margin: 40px 18px;
+  padding: 40px 18px;
   gap: 12px;
 }
 
@@ -151,6 +153,20 @@ body {
   border: solid 1px var(--text-light-secondary);
   border-radius: 48px;
 }
+.btn-mute {
+  max-width: 42px;
+  min-width: 25px;
+  width: 25px;
+  height: 25px;
+  padding: 6px;
+  background-color: transparent;
+  border: solid 1px var(--text-light-secondary);
+  border-radius: 50%;
+  margin-left: auto;
+}
+.btn-mute img {
+  width: 12px;
+}
 
 .bg-dim {
   background: linear-gradient(to top, rgb(0, 0, 0), rgba(0, 0, 0, 0));
@@ -170,9 +186,11 @@ body {
   padding: 20px 0px;
   font-size: 18px;
   min-height: 151px;
+  max-height: 309px;
 }
 .resume-item {
   width: fit-content;
+  max-height: 162px;
   position: relative;
 }
 .resume-list,
@@ -183,6 +201,34 @@ body {
   flex-direction: row;
   gap: 16px;
   padding-bottom: 1px;
+  position: relative;
+}
+.resume-list {
+  max-height: 162px;
+}
+.scroll-desktop-left,
+.scroll-desktop-right {
+  width: 44px;
+  height: 44px;
+  position: absolute;
+  border: solid 1px var(--text-light-secondary);
+  border-radius: 50%;
+  padding: 10px;
+  z-index: 2;
+  background-color: var(--other-paper);
+  top: 60%;
+  transform: translateY(-60%);
+}
+.scroll-desktop-left {
+  left: -20px;
+}
+.scroll-desktop-right {
+  right: -20px;
+}
+.scroll-right,
+.scroll-left {
+  width: 24px;
+  height: 24px;
 }
 .resume-section img {
   max-height: 151px;
@@ -214,6 +260,7 @@ body {
   padding-top: 20px;
   font-size: 18px;
   min-height: 151px;
+  max-height: 512px;
 }
 .top-rating-item,
 .film-trending-item,
@@ -225,8 +272,8 @@ body {
 .top-rating-section img,
 .film-trending-section img,
 .new-releases-section img {
-  min-height: 145px;
   height: 145px;
+  max-height: 365px;
 }
 .new-eps-overlay p {
   font-size: 5.74px;
@@ -302,4 +349,225 @@ body {
 .footer-bar a {
   color: var(--text-light-secondary);
   text-decoration: none;
+}
+@media (max-width: 768px) {
+  .footer-genre-desktop {
+    display: none;
+  }
+  .footer-bantuan-desktop {
+    display: none;
+  }
+  .scroll-desktop-left,
+  .scroll-desktop-right {
+    display: none;
+  }
+  .chill-logo-desktop {
+    display: none;
+  }
+}
+@media (min-width: 768px) {
+  .chill-logo-mobile {
+    display: none;
+  }
+  .chill-logo-desktop {
+    height: 44px;
+  }
+  .navbar,
+  .navbar a {
+    height: fit-content;
+    font-size: 18px;
+  }
+  .navbar {
+    gap: 80px;
+    padding: 1rem 80px;
+  }
+  .navbar-container {
+    height: fit-content;
+  }
+  .featured-content {
+    height: 587px;
+  }
+  .featured-overlay {
+    height: 233px;
+    width: 90%;
+    margin: 274px 80px 80px 80px;
+    gap: 40px;
+  }
+  .featured-overlay-text h4 {
+    font-size: 48px;
+  }
+  .featured-overlay-text p {
+    font-size: 18px;
+    height: fit-content;
+    width: 668px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  .btn-container {
+    height: fit-content;
+    width: 100%;
+  }
+  .btn-watch,
+  .more-info-label,
+  .more-info-label a,
+  .age-info,
+  .age-info p,
+  .btn-mute {
+    height: 42px;
+    font-size: 16px;
+  }
+  .btn-watch {
+    width: fit-content;
+    padding: 10px 26px;
+  }
+  .more-info-label {
+    width: fit-content;
+    padding: 10px 26px;
+  }
+  .age-info {
+    width: fit-content;
+    padding: 10px 10px;
+  }
+  .btn-mute {
+    width: 42px;
+    padding: 10px;
+    background-color: transparent;
+    border: solid 1px var(--text-light-secondary);
+    border-radius: 50%;
+    margin-left: auto;
+  }
+  .btn-mute img {
+    width: 16px;
+  }
+
+  .resume-section {
+    height: 100%;
+    padding-top: 40px;
+    margin: 0px 80px;
+    position: relative;
+  }
+  .resume-item,
+  .resume-list {
+    height: 100%;
+  }
+  .resume-list {
+    overflow: hidden;
+  }
+
+  .top-rating-section,
+  .film-trending-section,
+  .new-releases-section {
+    color: var(--text-light-primary);
+    margin: 0px 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    padding-top: 40px;
+    font-size: 18px;
+
+    position: relative;
+  }
+
+  .top-rating-section img,
+  .film-trending-section img,
+  .new-releases-section img {
+    height: 100%;
+  }
+  .new-eps-overlay p {
+    font-size: 14px;
+    font-weight: bold;
+    background-color: var(--btn-primary-300);
+    padding: 4px 10px;
+    border-radius: 12px;
+    min-height: 14px;
+    height: 28px;
+    width: 50%;
+    text-align: center;
+
+    position: absolute;
+    top: 8px;
+    left: 8px;
+  }
+  .top-10-overlay p {
+    font-size: 14px;
+    font-weight: bold;
+    background-color: var(--red-pressed);
+    padding: 2px;
+    min-height: 22px;
+    max-height: 48px;
+    height: 100%;
+    min-width: 11px;
+    max-width: 31px;
+    width: 100%;
+    text-align: center;
+
+    border-top-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+
+    position: absolute;
+    top: 0px;
+    right: 8px;
+  }
+
+  .top-rating-list,
+  .film-trending-list,
+  .new-releases-list {
+    overflow: hidden;
+  }
+  .footer-bar {
+    display: none;
+  }
+  .page-footer {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 60px 80px;
+  }
+  .footer-logo-container {
+    width: 315px;
+  }
+  .footer-logo-container img {
+    width: 100%;
+  }
+  .header-footer p {
+    color: var(--text-light-primary);
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  .footer-genre-grid {
+    display: grid; /* use grid for neat multi-column genre layout */
+    font-size: 16px;
+    grid-template-columns: repeat(
+      4,
+      auto
+    ); /* 4 columns: Aksi/Drama/Komedi/Sains&Alam per row */
+    gap: 8px 24px; /* 8px row gap, 24px column gap between genre links */
+  }
+  .footer-genre-grid a {
+    color: var(--text-light-secondary); /* muted color for genre link items */
+    text-decoration: none; /* remove underline from genre links */
+    font-size: 12px; /* smaller text for the dense genre grid */
+    white-space: nowrap; /* prevent long genre names like "Fantasi Ilmiah" from wrapping */
+  }
+  .footer-genre-grid a:hover {
+    color: var(
+      --text-light-primary
+    ); /* brighten on hover for interactivity feedback */
+  }
+
+  .footer-bantuan-grid {
+    display: grid; /* use grid for neat multi-column bantuan layout */
+    grid-template-columns: repeat(
+      1,
+      auto
+    ); /* 1 column: all bantuan links in a single column */
+    gap: 8px 24px; /* 8px row gap, 24px column gap between bantuan links */
+  }
+  .footer-bantuan-grid a {
+    color: var(--text-light-secondary); /* muted color for bantuan link items */
+    text-decoration: none; /* remove underline from bantuan links */
+    white-space: nowrap; /* prevent wrapping of bantuan links */
+  }
 }
